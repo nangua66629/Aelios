@@ -1,4 +1,4 @@
-name = "companion-memory-proxy"
+name = "wenlian_memory_proxy"
 main = "src/index.ts"
 compatibility_date = "2026-04-01"
 keep_vars = true
@@ -90,14 +90,14 @@ GITHUB_DAILY_PATH = "archive/daily"
 
 [[vectorize]]
 binding = "VECTORIZE"
-index_name = "memo-kb"
+index_name = "memo-kb-wenlian"
 
 [[queues.producers]]
 binding = "MEMORY_QUEUE"
 queue = "companion-memory"
 
 [[queues.consumers]]
-queue = "companion-memory"
+queue = "wenlian-memory"
 max_batch_size = 10
 max_batch_timeout = 30
 
